@@ -37,7 +37,7 @@ To run this project, you'll need to install PySpark and some other libraries and
    ```bash
    !pip install pyspark
    
-2.**Modules Installation:**:
+2. **Modules Installation:**:
    ```bash
    # Importing Spark session
    from pyspark.sql import SparkSession
@@ -57,21 +57,19 @@ To run this project, you'll need to install PySpark and some other libraries and
     
    # PySpark data modeling and model evaluation modules
    from pyspark.ml.classification import DecisionTreeClassifier
-   from pyspark.ml.evaluation import BinaryClassificationEvaluator ```
+   from pyspark.ml.evaluation import BinaryClassificationEvaluator 
 
 ## Project Description
 
-Main Script:
-The main script to run is The_Notebook.ipynb. It is recommended to execute this notebook on Google Colab.
+- Main Script: The main script to run is The_Notebook.ipynb. It is recommended to execute this notebook on Google Colab.
 
-Execution Order:
-
-Welcome To the Notebook
-Task 1 - Loading our data
-Task 2 - Exploratory Data Analysis
-Task 3 - Data Preprocessing
-Task 4 - Feature Preparation
-Task 5 - Model Training
-Task 6 - Model Evaluation
-Task 7 - Model Deployment
+- Execution Order:
+  
+   - Task 1 - Loading our data
+   - Task 2 - Exploratory Data Analysis
+   - Task 3 - Data Preprocessing
+   - Task 4 - Feature Preparation
+   - Task 5 - Model Training
+   - Task 6 - Model Evaluation
+   - Task 7 - Model Deployment
 
