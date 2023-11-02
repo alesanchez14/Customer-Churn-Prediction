@@ -1,73 +1,71 @@
-# Proyecto de Predicción de Churn de Clientes con PySpark
+# Customer Churn Prediction Project using PySpark
 
-En este proyecto de 90 minutos, "PySpark para Data Science: Predicción de Churn de Clientes", aprenderás cómo utilizar PySpark para construir un modelo de machine learning para predecir el churn de clientes en una empresa de telecomunicaciones.
+In this 90-minute project, "PySpark for Data Science: Customer Churn Prediction", you will learn how to use PySpark to build a machine learning model to predict customer churn at a telecommunications company.
 
-## Contenidos
-1. [Descripción del Proyecto](#descripción-del-proyecto)
-2. [Prerrequisitos](#prerrequisitos)
-3. [Instalación](#instalación)
-4. [Uso](#uso)
-5. [Licencia](#licencia)
-6. [Créditos](#créditos)
+## Table of Contents
+1. [Project Description](#project-description)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [License](#license)
+6. [Credits](#credits)
 
-## Descripción del Proyecto
+## Project Description
 
-Este proyecto cubre una serie de tareas esenciales, incluyendo:
+This project covers a series of essential tasks including:
 
-- Carga de datos
-- Análisis exploratorio de datos
-- Preprocesamiento de datos
-- Preparación de características
-- Entrenamiento del modelo
-- Evaluación
-- Despliegue
+- Data Loading
+- Exploratory Data Analysis (EDA)
+- Data Preprocessing
+- Feature Preparation
+- Model Training
+- Evaluation
+- Deployment
 
-Todo utilizando PySpark. El modelo de machine learning desarrollado identifica los factores que contribuyen al churn de clientes, proporcionando insights accionables a la empresa para reducir el churn y aumentar la retención de clientes.
+All using PySpark. The developed machine learning model identifies the factors contributing to customer churn, providing actionable insights to the company to reduce churn and increase customer retention.
 
-## Prerrequisitos
+## Prerequisites
 
-- Conocimiento básico de Machine Learning y Árboles de Decisión.
-- Familiaridad con conceptos de programación en Python como bucles, sentencias if y listas.
+- Basic knowledge of Machine Learning and Decision Trees.
+- Familiarity with Python programming concepts such as loops, if statements, and lists.
 
-## Instalación
+## Installation
 
-Para ejecutar este proyecto, necesitarás instalar PySpark y algunas otras bibliotecas y módulos. Aquí te mostramos cómo hacerlo:
+To run this project, you'll need to install PySpark and some other libraries and modules. Here's how to do it:
 
-1. **Instalación de PySpark**:
+1. **PySpark Installation**:
    ```bash
    !pip install pyspark
    
-2. **Instalación de Modulos**
+2.**Modules Installation:**:
+   ```bash
+   # Importing Spark session
+   from pyspark.sql import SparkSession
+    
+   # Data visualization modules
+   import matplotlib.pyplot as plt
+   import plotly.express as px
+    
+   # Pandas module
+   import pandas as pd
+    
+   # PySpark SQL functions
+   from pyspark.sql.functions import col, when, count, udf
+    
+   # PySpark data preprocessing modules
+   from pyspark.ml.feature import Imputer, StringIndexer, VectorAssembler, StandardScaler
+    
+   # PySpark data modeling and model evaluation modules
+   from pyspark.ml.classification import DecisionTreeClassifier
+   from pyspark.ml.evaluation import BinaryClassificationEvaluator ```
 
-    # Importación de sesión spark
-    from pyspark.sql import SparkSession
-    
-    # Módulos de visualización de datos
-    import matplotlib.pyplot as plt
-    import plotly.express as px
-    
-    # Módulo pandas
-    import pandas as pd
-    
-    # Funciones SQL de pyspark
-    from pyspark.sql.functions import col, when, count, udf
-    
-    # Módulos de preprocesamiento de datos de pyspark
-    from pyspark.ml.feature import Imputer, StringIndexer, VectorAssembler, StandardScaler
-    
-    # Módulos de modelado de datos y evaluación de modelos de pyspark
-    from pyspark.ml.classification import DecisionTreeClassifier
-    from pyspark.ml.evaluation import BinaryClassificationEvaluator
-   
-4. **Construyendo nuestra Sesión Spark**
+## Project Description
 
-spark = SparkSession.builder.appName("Customer_Churn_Prediction").getOrCreate()
-spark
+Main Script:
+The main script to run is The_Notebook.ipynb. It is recommended to execute this notebook on Google Colab.
 
-Uso
-Script Principal:
-El script principal para ejecutar es The_Notebook.ipynb. Se recomienda ejecutar este notebook en Google Colab.
-Orden de Ejecución:
+Execution Order:
+
 Welcome To the Notebook
 Task 1 - Loading our data
 Task 2 - Exploratory Data Analysis
@@ -75,14 +73,5 @@ Task 3 - Data Preprocessing
 Task 4 - Feature Preparation
 Task 5 - Model Training
 Task 6 - Model Evaluation
-7 - Model Deployment
-Licencia
-Este proyecto es para fines educativos y no tiene una licencia específica.
+Task 7 - Model Deployment
 
-Créditos
-Este proyecto fue realizado siguiendo una guía de un curso en la plataforma Coursera.
-
-go
-Copy code
-
-Con esta estructura ya puedes crear o actualizar tu archivo `README.md` en tu repositorio de GitHub.
