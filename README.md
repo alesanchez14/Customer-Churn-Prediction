@@ -8,7 +8,7 @@ In this 90-minute project, "PySpark for Data Science: Customer Churn Prediction"
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [License](#license)
-6. [Credits](#credits)
+
 
 ## Project Description
 
@@ -72,4 +72,8 @@ To run this project, you'll need to install PySpark and some other libraries and
    - Task 5 - Model Training
    - Task 6 - Model Evaluation
    - Task 7 - Model Deployment
+
+## Licence 
+
+This project is for educational purposes and does not have a specific license.
 
